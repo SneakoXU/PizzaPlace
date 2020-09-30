@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PizzaGUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="967" height="966"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="9ba5b" binding="labelPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="North"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="fc599" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false">
+                <maximum-size width="250" height="250"/>
+              </grid>
+            </constraints>
+            <properties>
+              <icon value="assets/pizza.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="f0c53" class="javax.swing.JLabel" binding="Pizza">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+              <font name="Consolas" size="24" style="1"/>
+              <text value="Pizza"/>
+            </properties>
+          </component>
+          <component id="88bc6" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <icon value="assets/pizza.png"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="aefc0" binding="buttonsPanel" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8f13a" class="javax.swing.JButton" binding="quitButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <actionCommand value="Button"/>
+              <label value="Quit"/>
+              <text value="Quit"/>
+            </properties>
+          </component>
+          <component id="582b6" class="javax.swing.JButton" binding="clearButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <label value="Clear"/>
+              <text value="Clear"/>
+            </properties>
+          </component>
+          <component id="62d81" class="javax.swing.JButton" binding="orderButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <label value="Order"/>
+              <text value="Order"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5e66d" binding="optionsPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="c3866" binding="crustPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties>
+              <minimumSize width="50" height="50"/>
+              <preferredSize width="125" height="125"/>
+              <requestFocusEnabled value="false"/>
+            </properties>
+            <border type="line" title="Crust"/>
+            <children/>
+          </grid>
+          <grid id="ea4dc" binding="sizesPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <maximumSize width="2147483647" height="2147483647"/>
+              <minimumSize width="50" height="50"/>
+              <preferredSize width="125" height="125"/>
+              <requestFocusEnabled value="true"/>
+            </properties>
+            <border type="line" title="Sizes">
+              <color color="-16777216"/>
+            </border>
+            <children/>
+          </grid>
+          <grid id="5f141" binding="toppingsPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="South"/>
+            <properties>
+              <opaque value="false"/>
+              <preferredSize width="125" height="125"/>
+              <requestFocusEnabled value="false"/>
+            </properties>
+            <border type="line" title="Toppings">
+              <color color="-16777216"/>
+            </border>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+      <grid id="8bcf8" binding="receiptPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="b3879">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9b95c" class="javax.swing.JTextArea" binding="receiptTextArea">
+                <constraints/>
+                <properties/>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
